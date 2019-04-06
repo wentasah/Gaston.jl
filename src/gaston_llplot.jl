@@ -213,7 +213,8 @@ function llplot()
     # if there was no error and text terminal, read all data from stdout
     if err == ""
         if (gaston_config.terminal ∈ term_text)
-            fig.svg = out
+            first = gaston_config.terminal == "dumb" && out[1] == '\f' ? 2 : 1
+            fig.svg = out[first:end]
         end
     end
 

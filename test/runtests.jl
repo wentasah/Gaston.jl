@@ -197,7 +197,7 @@ end
               set(terminal="dumb", print_size="27,13")
               repr("text/plain", plot(1:10))
           end == """
-                 \f                           
+                                            
                    10 +-----------------+   
                     9 |-+ + + + + + +**-|   
                     8 |-+          ** +-|   
